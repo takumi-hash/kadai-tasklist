@@ -5,7 +5,7 @@
     <h1>Details of id = {{ $task->id }}</h1>
 
     <p>Content: {{ $task->content }}</p>
-    <p>Status: {{ $task->content }}</p>
+    <p>Status: {{ $task->status }}</p>
     
     {!! link_to_route('tasks.edit', 'Edit this task.', ['id' => $task->id]) !!}
     {!! Form::model($task, ['route' => ['tasks.destroy', $task->id], 'method' => 'delete']) !!}
