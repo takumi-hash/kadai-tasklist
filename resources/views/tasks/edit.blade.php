@@ -9,6 +9,9 @@
         {!! Form::label('content', 'Task contents:') !!}
         {!! Form::text('content') !!}
 
+        {!! Form::label('status', 'Status:') !!}
+        {!! Form::text('status') !!}
+
         {!! Form::submit('Update') !!}
 
     {!! Form::close() !!}

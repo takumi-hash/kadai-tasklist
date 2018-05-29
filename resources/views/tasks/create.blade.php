@@ -8,6 +8,9 @@
 
         {!! Form::label('content', 'Task:') !!}
         {!! Form::text('content') !!}
+        
+        {!! Form::label('staus', 'Status:') !!}
+        {!! Form::text('status') !!}
 
         {!! Form::submit('Add') !!}
 
