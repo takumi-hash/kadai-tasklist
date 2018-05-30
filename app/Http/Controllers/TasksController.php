@@ -90,13 +90,13 @@ class TasksController extends Controller
     public function update(Request $request, $id)
     {
         $this->validate($request, [
-            'conent' => 'required|max:191', 
+            'content' => 'required|max:191', 
             'status' => 'required|max:10',
         ]);
         
         $task = Task::find($id);
         $task->content = $request->content;
-        $message->status = $request->status;
+        $task->status = $request->status;
         $task->save();
 
         return redirect('/');
