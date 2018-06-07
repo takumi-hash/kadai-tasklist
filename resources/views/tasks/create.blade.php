@@ -21,7 +21,7 @@
         </div>
     </div>
     @else
-        {{ print('<h2 class="alert alert-danger"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>You are not authorized for that action!</h2>')}}
+        {{ print('<h2 class="alert alert-warning"><span class="glyphicon glyphicon-ban-circle" aria-hidden="true"></span>You are not logged in!</h2>')}}
     @endif
 
 @endsection
